@@ -1,15 +1,20 @@
+import { ImagesProps } from '../../types';
 import ImageCard from '../ImageCard/ImageCard';
 import css from './ImageGallery.module.css';
 
-const ImageGallery = ({ images, openModal }) => {
+interface Props {
+  images: ImagesProps[];
+  openModal: (...keys: string[]) => void;
+}
+
+const ImageGallery: React.FC<Props> = ({ images, openModal }) => {
   return (
     <ul className={css.imageMenu}>
-      {images.map(({ id, description, urls: { small, regular } }) => {
+      {images.map(({ id, description, urls }) => {
         return (
           <li key={id} className={css.imageItem}>
             <ImageCard
-              small={small}
-              regular={regular}
+              urls={urls}
               description={description}
               openModal={openModal}
             />
