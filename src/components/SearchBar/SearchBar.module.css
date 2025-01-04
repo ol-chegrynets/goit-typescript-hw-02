@@ -1,31 +1,31 @@
 .form {
-    margin: auto;
-    background-color: salmon;
-    padding: 15px;
+  margin: auto;
+  background-color: salmon;
+  padding: 15px;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .input {
-    width: 200px;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 8px;
-    margin-right: 10px;
-    outline: transparent;
-    color: brown;
+  width: 200px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  outline: transparent;
+  color: brown;
 }
 
 input::placeholder {
-    color: lightcoral;
+  color: lightcoral;
 }
 
 .btn {
-    min-width: 100px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: darkred;
-    color: antiquewhite;
+  min-width: 100px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: darkred;
+  color: antiquewhite;
 }
