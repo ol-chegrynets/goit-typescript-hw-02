@@ -1,6 +1,6 @@
 .form {
   margin: auto;
-  background-color: salmon;
+  background-color: #06a888;
   padding: 15px;
 
   display: flex;
@@ -14,11 +14,11 @@
   border-radius: 8px;
   margin-right: 10px;
   outline: transparent;
-  color: brown;
+  color: blue;
 }
 
 input::placeholder {
-  color: lightcoral;
+  color: #06a888;
 }
 
 .btn {
@@ -26,6 +26,6 @@ input::placeholder {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  background-color: darkred;
+  background-color: blue;
   color: antiquewhite;
 }
