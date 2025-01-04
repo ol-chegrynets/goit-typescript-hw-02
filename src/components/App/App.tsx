@@ -7,8 +7,9 @@ import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import Loader from '../Loader/Loader';
 import toast, { Toaster } from 'react-hot-toast';
-import { ImagesProps, ModalProps, Response } from '../../types';
+import { ImagesProps, ModalProps } from '../../types';
 import ImageModal from '../ImageModal/ImageModal';
+
 
 function App() {
   const [query, setQuery] = useState<string>('');
@@ -32,6 +33,12 @@ function App() {
     setIsEmpty(false);
     setError(null);
   };
+
+  interface Response {
+    results: ImagesProps[];
+    total: number;
+    total_pages: number;
+  }
   useEffect(() => {
     if (!query) {
       return;
